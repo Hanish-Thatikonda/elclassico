@@ -1,0 +1,68 @@
+<html>
+<center>
+<head>
+<style>
+.tt {background-color: black
+      }
+.b {background-color: black;
+    font-size: 30px
+}
+#res {font-size: 25px
+}
+body { background-image: url("C:\\Users\\Hanish\\Desktop\\my website\\images\\back1.jpg")}
+.add {background-color: yellow}
+#demo {color: yellow}
+p { font-family: ravie;
+    font-size: 30px
+   }
+</style>
+</head>
+<body>
+<script>
+function cs(){
+document.getElementById("res").value="";
+}
+function num(input){
+document.getElementById("res").value+=input;
+}
+function cal(){
+var h=eval(document.getElementById("res").value);
+document.getElementById("res").value=h;
+}
+</script>
+<table border=1 class="tt">
+<caption><h1 class="add"><I>CALCULATOR</I></h1></caption>
+<tr>
+<td colspan="3"><input type="text" id="res"></td>
+<td><button class="b" onclick="cs()"><font color="white">AC</font></button></td>
+</tr>
+<tr>
+<td align="center"><button class="b" onclick="num(1)"><font color="white">1</font></button></td>
+<td align="center"><button class="b" onclick="num(2)"><font color="white">2</font></button></td>
+<td align="center"><button class="b" onclick="num(3)"><font color="white">3</font></button></td>
+<td align="center"><button class="b" onclick="num('+')"><font color="white">+</font></button></td>
+</tr>
+<tr>
+<td align="center"><button class="b" onclick="num(4)"><font color="white">4</font></button></td>
+<td align="center"><button class="b" onclick="num(5)"><font color="white">5</font></button></td>
+<td align="center"><button class="b" onclick="num(6)"><font color="white">6</font></button></td>
+<td align="center"><button class="b" onclick="num('-')"><font color="white">-</font></button></td>
+</tr>
+<tr>
+<td align="center"><button class="b" onclick="num(7)"><font color="white">7</font></button></td>
+<td align="center"><button class="b" onclick="num(8)"><font color="white">8</font></button></td>
+<td align="center"><button class="b" onclick="num(9)"><font color="white">9</font></button></td>
+<td align="center"><button class="b" onclick="num('*')"><font color="white">*</font></button></td>
+</tr>
+<tr>
+<td align="center"><button class="b" onclick="num(0)"><font color="white">0</font></button></td>
+<td align="center"><button class="b" onclick="num('%')"><font color="white">%</font></button></td>
+<td align="center"><button class="b" onclick="cal()"><font color="white">=</font></button></td>
+<td align="center"><button class="b" onclick="num('/')"><font color="white">/</font></button></td>
+</tr></table>
+<p><b><I><font color="black">designed</font></I></b></p>
+<p><b><I><font color="black">by</font></I></b></p>
+<p id="demo"><b><I>HANISH</I></b></p>
+</body>
+</center>
+</html>
